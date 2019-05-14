@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel='shortcut icon' type='image/x-icon' href="favicon.ico"/>
+  <title>AdoptOpenJDK Download Dashboard</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="text-center">
+    <a href="./"><img src="https://adoptopenjdk.net/dist/assets/adopt_logo_blue.svg" height="75em;"></img></a>
+    <h2>AdoptOpenJDK Total Downloads</h2>
+  </div>
+  <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <canvas id="graph"></canvas>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+
+  <script>
+    var data = <%- JSON.stringify(data) %>;
+  </script>
+  <script src="javascripts/app.js"></script>
+</body>
+</html>
