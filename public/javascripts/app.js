@@ -21,7 +21,7 @@ function generateGraph(data) {
             tooltipFormat: 'll HH:mm',
             unit: 'day',
             displayFormats: {
-              'day': 'MM/DD/YYYY'
+              'day': 'DD/MM/YYYY'
             }
           },
           scaleLabel: {
