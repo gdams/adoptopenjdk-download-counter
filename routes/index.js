@@ -7,7 +7,7 @@ const client = new Client({
   user: 'readonly',
   host: '37.153.110.144',
   database: 'downloadStats',
-  password: 'process.env.PSQL_PASSWORD',
+  password: process.env.PSQL_PASSWORD,
   port: 5432,
 })
 
